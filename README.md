@@ -48,3 +48,33 @@ This diagnostic tests the "advanced" instruction set.
 This is a complete application that calculates the Fibonacci number sequence.
 * **Objective:** To demonstrate that the processor can execute a real-world algorithm involving loops, memory access (`LDA`, `STO`), and arithmetic (`ADD`).
 * **Functionality:** The program uses variables `FN1`, `FN2`, and `TEMP` to iteratively calculate the sequence (0, 1, 1, 2, 3...) until it reaches the `LIMIT` value of 144.
+
+## How to use
+**1)** Download all files into a single folder.
+**2)** Install the Open Source Verilog compiler Icarus Verilog
+**3)** In the folder with the .txt and .v files, open the terminal in your Linux System and execute:
+```
+iverilog *.v -o testbench.vvp
+vvp testbench.vvp 
+```
+**4)** You must see the message:
+```
+Testing reset
+Testing HLT instruction
+Depois TEST HTL:time=4
+Depois Clock HTL: time=14
+Testing JMP instruction
+Depois Testing JMP: time=14
+Testing SKZ instruction
+time=40
+Testing LDA instruction
+Testing STO instruction
+Testing AND instruction
+Testing XOR instruction
+Testing ADD instruction
+Doing test CPUtest1.txt
+Doing test CPUtest2.txt
+Doing test CPUtest3.txt
+TEST PASSED
+risc_test.v:168: $finish called at 2898 (1s)
+```
