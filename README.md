@@ -51,7 +51,9 @@ This is a complete application that calculates the Fibonacci number sequence.
 
 ## How to use
 **1)** Download all files into a single folder.
-**2)** Install the Open Source Verilog compiler Icarus Verilog
+
+**2)** Install the Open Source Verilog compiler Icarus Verilog.
+
 **3)** In the folder with the .txt and .v files, open the terminal in your Linux System and execute:
 ```
 iverilog *.v -o testbench.vvp
